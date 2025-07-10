@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <style>
+        #basic_form{
+            width: 600px;    
+            padding: 50px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            background-color: rgb(225, 225, 225);
+            border-radius: 10px;
+        }
+
+        #basic_form > div{
+            padding: 10px;
+        }
+
+        #basic_form label{
+            display: flex;
+            font-weight: bold;
+        }
+
+        #basic_form label span{
+            display: inline-block;
+            width: 150px;
+        }
+
+        #basic_form label div{
+            flex: 1;
+        }
+
+        #basic_form input{
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        #basic_form button{
+            display: block;
+            border: 0;
+            color: #FFF;
+            padding: 10px;
+            width: 200px;
+            margin: 20px auto 0 auto;
+            background-color: #0144ff;
+        }
+
+        .swiper {
+  width: 600px;
+  height: 300px;
+        }
+
+   /*  */
+        /* CSS for Swiper */
+        /*  */
+        #swiper-container{
+            display: flex;
+            justify-content: center;
+        }
+        .swiper {
+            position: relative;
+            width: 500px;
+            height: 300px;
+        }
+        .swiper-title{
+            text-align: center;
+            font-weight: bold;
+        }
+        .swiper-slide div{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide div img{
+            width: 40%;
+            height: auto;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+     <div id="swiper-container">
+
+        <div>
+            <!-- Slider main container -->
+            <!-- 複数のSwiperを識別するため、 classに swiper-1 を設定-->
+            <div class="swiper swiper-1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+
+            </div>
+          
+            <div id="swiper-title" class="swiper-title"></div>
+        </div>
+
+        <div>
+
+            <div class="swiper swiper-2">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="img/pose_pien_uruuru_man.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="img/pose_dance_ukareru_woman.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="img/pose_koshi_nukeru_kowai_woman.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="img/pose_kuyashii_man.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <!-- タイトル表示用 -->
+            <div id="swiper-title-2" class="swiper-title"></div>
+        </div>
+
+    </div>
+  <div class="block">
+	<form id="basic_form">
+<p>名前　　　　　　　<input id="basic_name" name="basic_name" type="text" placeholder="名前を入力してください。" /></p>
+<p>メールアドレス　　<input id="basic_email" name="basic_email" type="text" placeholder="メールアドレスを入力してください。" /></p>
+<p> パスワード　　　　<input id="basic_password" name="basic_password" type="text" placeholder="パスワードを入力してください。" /></p>
+<p>年齢　　　　　　　<input id="basic_age" name="basic_age" type="text" placeholder="年齢を入力してください。" /></p>
+<p>住所　　　　　　　<input id="basic_address" name="basic_address" type="text" placeholder="住所を入力してください。" /></p>
+  <button type="submit">送信</button>
+
+  <script type="module" src="main.js"></script>
+
+</div>
+
+</body>
+</html>
